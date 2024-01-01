@@ -1,6 +1,7 @@
-import java.util.*;
 public class helloworld{
     public static void main(String []args){
-        System.out.println("fdfd")
+        int a=3;
+     System.out.println(a);
+
     }
 }
