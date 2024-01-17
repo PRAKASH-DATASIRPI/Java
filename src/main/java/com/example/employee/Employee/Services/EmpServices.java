@@ -3,7 +3,8 @@ package com.example.employee.Employee.Services;
 import com.example.employee.Employee.DTO.EmployeeDTO;
 import com.example.employee.Employee.Entity.Employee;
 import com.example.employee.Employee.Repo.EmployeeRepo;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -13,9 +14,11 @@ import java.util.List;
 
 @Service
 public class EmpServices {
+    private static final Logger logger = LoggerFactory.getLogger(EmpServices.class);
 
     @Autowired
     private EmployeeRepo emprepo;
+
 
 
 
@@ -24,6 +27,8 @@ public class EmpServices {
         Employee emp = new Employee(empdto);
 
         Employee savedemp = emprepo.save(emp);
+
+        logger.info("This is an informational message");
 
         return savedemp.toString();
     }
