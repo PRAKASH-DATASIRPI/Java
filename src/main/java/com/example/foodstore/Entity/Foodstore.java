@@ -42,8 +42,6 @@ public class Foodstore {
 
     }
 
-
-
     public int getId() {
         return id;
     }
@@ -76,3 +74,5 @@ public class Foodstore {
         this.category = category;
     }
 }
+
+

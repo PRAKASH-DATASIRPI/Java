@@ -3,6 +3,8 @@ package com.example.foodstore.DTO;
 
 import jakarta.persistence.Column;
 import lombok.*;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
 
 @Data
 @Getter
@@ -11,10 +13,16 @@ import lombok.*;
 
 public class FoodstoreDTO {
 
+
+
     private int id;
 
+    @NotEmpty(message = "name required")
     private String name;
+
+    @NotNull(message = "price required")
     private int price;
+
 
     private String category;
 
@@ -24,10 +32,10 @@ public class FoodstoreDTO {
         this.price = price;
         this.category = category;
     }
-
+//generate default constructor
     public FoodstoreDTO() {
     }
-
+// generate all args get setter
     public int getId() {
         return id;
     }
