@@ -1,7 +1,8 @@
-package com.example.testing.junittest.entity;
+package com.example.product.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+
 
 @Entity
 @Data
@@ -18,6 +19,7 @@ public class Product {
      private String name;
      private Double price;
      private String description;
+
 
 
 //    public Product(Long id, String name, Double price, String description) {

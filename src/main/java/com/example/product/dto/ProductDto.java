@@ -1,4 +1,4 @@
-package com.example.testing.junittest.dto;
+package com.example.product.dto;
 
 
 import lombok.*;

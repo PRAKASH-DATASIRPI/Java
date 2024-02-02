@@ -1,10 +1,9 @@
-package com.example.testing.junittest.controller;
+package com.example.product.controller;
 
 
-import com.example.testing.junittest.dto.ProductDto;
-import com.example.testing.junittest.entity.Product;
-import com.example.testing.junittest.repo.ProductRepo;
-import com.example.testing.junittest.service.ProductService;
+import com.example.product.entity.Product;
+import com.example.product.repo.ProductRepo;
+import com.example.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +12,7 @@ import java.util.List;
 @RestController
 @CrossOrigin
 @RequestMapping("/api/products")
-public class ProuductController {
+public class productController {
     @Autowired
     private ProductRepo productRepo;
 

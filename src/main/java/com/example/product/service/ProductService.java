@@ -1,8 +1,7 @@
-package com.example.testing.junittest.service;
+package com.example.product.service;
 
-import com.example.testing.junittest.dto.ProductDto;
-import com.example.testing.junittest.entity.Product;
-import com.example.testing.junittest.repo.ProductRepo;
+import com.example.product.repo.ProductRepo;
+import com.example.product.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;

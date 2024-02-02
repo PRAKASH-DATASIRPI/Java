@@ -1,13 +1,13 @@
-package com.example.testing.junittest;
+package com.example.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JunittestApplication {
+public class JunitTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JunittestApplication.class, args);
+		SpringApplication.run(JunitTestApplication.class, args);
 	}
 
 }

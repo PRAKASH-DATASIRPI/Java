@@ -1,6 +1,6 @@
-package com.example.testing.junittest.repo;
+package com.example.product.repo;
 
-import com.example.testing.junittest.entity.Product;
+import com.example.product.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepo extends JpaRepository<Product, Long> {
