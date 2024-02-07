@@ -1,6 +1,6 @@
 package com.auth.springsecurity.controller;
 
-import com.auth.springsecurity.dto.Product;
+//import com.auth.springsecurity.dto.Product;
 import com.auth.springsecurity.entity.AuthRequest;
 import com.auth.springsecurity.entity.UserInfo;
 import com.auth.springsecurity.services.JwtService;
@@ -47,15 +47,13 @@ public class UserController {
     }
     @GetMapping("secured/getUsers")
     @PreAuthorize("hasAuthority('ADMIN')")
-    public List<Product> getAllUsers(){
-        return userInfoService.getProducts();
+    public List<UserInfo> getAllUsers(){
+        return userInfoService.getAllUser();
     }
-
     @GetMapping("secured/getUsers/{id}")
     @RolesAllowed({"USER","ADMIN"})
-    public Product getAllUsers(@PathVariable Integer id){
-
-        return userInfoService.getProduct(id);
+    public UserInfo getAllUsers(@PathVariable Integer id){
+        return userInfoService.getUser(id);
     }
 
 
